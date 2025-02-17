@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gestión de Tareas (To-Do List)</title>
+            <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+        
+        <link rel="stylesheet" href="css/stylelab4y5.css">
+    </head>
+    <body>
+        <article><aside>
+            <p> Material design </p>
+            <p> Material Design es un sistema de diseño creado por Google que proporciona guías 
+            visuales y de interacción para construir interfaces consistentes, intuitivas y atractivas, 
+            inspiradas en el mundo físico, con énfasis en la jerarquía visual, movimientos, colores 
+            vibrantes y tipografía moderna. Utiliza componentes reutilizables como botones, tarjetas y 
+            menús, y está diseñado para ser responsivo y accesible. Se emplea ampliamente en aplicaciones 
+            Android y en sitios web, con recursos como Material UI para React, Materialize CSS, y Angular 
+            Material.</p>
+            <p> Material Design. (2025). Material Design. https://m3.material.io/</p>
+        </article>
+        <h1>Gestión de Tareas (To-Do List)</h1>
+        <form onsubmit="event.preventDefault(); agregarTarea();">
+            <label for="taskInput">Nueva Tarea</label>
+            <input type="text" id="taskInput" placeholder="Escribe una tarea...">
+            <input type="submit" value="Agregar">
+        </form>
+
+        <ul id="taskList"></ul>
+
+        <footer>
+            <p> Hecho con MVP.css | https://andybrewer.github.io/mvp/</p>
+        <footer>
+    <script src="js/scriptlab4y5.js"></script>
+    </body>
+</html>
