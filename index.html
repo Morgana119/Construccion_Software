@@ -1,21 +1,16 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
     <head> <!--Metadatos-->
         <title>...</title>
+        <link rel="stylesheet" href="css/style.min.css">
     </head>
-    
+
     <body> 
         <header> 
-            <h1>Andrea Fátima Figueroa López | A01706844 | a01706844@tec.mx |</h1>
+            <h1 class= "title"> Andrea Fátima Figueroa López | A01706844 | a01706844@tec.mx |</h1>
         </header>
 
-        <nav>
-            <a href="/ /">Sobre mí</a> |
-            <a href="/ /">Lab1</a> |
-            <a href="/ /">...</a> |
-        </nav>
-
-        <section>
+        <section class="lab-section">
             <h1>Sobre mí</h1>
             <article>
                 <header> 
@@ -31,185 +26,356 @@
             </article>
         </section>
 
-        <section>
-            <h1>Lab 1</h1>
-            <article>
-                <header> 
-                    <h4>¿Cuál es la diferencia entre Internet y la World Wide Web?</h4>
-                </header>
-                <p>Internet es la red global de computadoras que permite la comunicación y 
-                transferencia de datos. La World Wide Web es un servicio dentro de Internet 
-                que permite acceder a páginas web mediante navegadores y el protocolo HTTP.</p>
-                <footer> 
-                    <h5>Catania, P. (2021, December 2). WWW vs Internet ¿es lo mismo? ADSLZone. https://www.adslzone.net/noticias/internet/www-vs-internet-diferencias/</h5>
-                </footer> 
-            </article>
+        <section class="lab-section">
+            <table>
+                <tr>
+                    <td class="lab-column">
+                        <h1 class="title">Lab 1</h1>
+                        <ul>
+                            <li class="lab li">
+                                <div class="questions">
+                                    <span class="arrow"></span>
+                                    <span>¿Cuál es la diferencia entre Internet y la World Wide Web?</span>
+                                </div>
+                                <div class="answer">
+                                    <p class="lab p">Internet es la red global de computadoras que permite la comunicación y 
+                                        transferencia de datos. La World Wide Web es un servicio dentro de Internet 
+                                        que permite acceder a páginas web mediante navegadores y el protocolo HTTP.</p>
+                                    <footer class="ref"> 
+                                        <h5>Catania, P. (2021, December 2). WWW vs Internet ¿es lo mismo? ADSLZone. 
+                                            <a href="https://www.adslzone.net/noticias/internet/www-vs-internet-diferencias/" target="_blank">
+                                                https://www.adslzone.net/noticias/internet/www-vs-internet-diferencias/
+                                            </a>
+                                        </h5>
+                                    </footer> 
+                                </div>
+                            </li>
 
-            <article>
-                <header> 
-                    <h4>¿Cuáles son las partes de un URL?</h4>
-                </header>
-                <p>Protocolo (Hypertext Transfer Protocol Secured) -> https://</p>
-                <p>Dominio: palabra que indentifica una o más direcciones IP -> www.ejemplo.com</p>
-                <p>Ruta: especifica la ubicación del recurso en el servidor -> /ruta/recurso</p>
-                <p>Parámetros: datos adicionales que identifican o filtran el recurso en el servidor -> ?query=valor</p>
-                <footer> 
-                    <h5>freeCodeCamp. (2019, September 11). An introduction to HTTP: everything you need to know. FreeCodeCamp.org. https://www.freecodecamp.org/news/http-and-everything-you-need-to-know-about-it/</h5>
-                </footer> 
-            </article>
+                            <li class="lab li">
+                                <div class="questions">
+                                    <span class="arrow"></span>
+                                    <Span>¿Cuáles son las partes de un URL?</span>
+                                </div>
+                                <div class="answer">
+                                    <p class="lab p">Protocolo (Hypertext Transfer Protocol Secured) -> https://</p>
+                                    <p class="lab p">Dominio: palabra que indentifica una o más direcciones IP -> www.ejemplo.com</p>
+                                    <p class="lab p">Ruta: especifica la ubicación del recurso en el servidor -> /ruta/recurso</p>
+                                    <p class="lab p">Parámetros: datos adicionales que identifican o filtran el recurso 
+                                    en el servidor -> ?query=valor</p>                        
+                                    <footer class="ref"> 
+                                        <h5>freeCodeCamp. (2019, September 11). An introduction to HTTP: everything you need 
+                                        to know. FreeCodeCamp.org.</h5>
+                                            <a href="https://www.freecodecamp.org/news/http-and-everything-you-need-to-know-about-it/" target="_blank">
+                                                https://www.freecodecamp.org/news/http-and-everything-you-need-to-know-about-it/
+                                            </a>
+                                    </footer> 
+                                </div>
+                            </li>
 
-            <article>
-                <header> 
-                    <h4>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</h4>
-                </header>
-                <p>GET: Obtener datos del servidor. Solicitar datos de un recurso específico en el que no se modifican de ninguna manera. Las solicitudes GET no cambian el estado del recurso.</p>
-                <p>HEAD: comprobar si el recurso está presente antes de realizar una solicitud GET. Similar a GET, pero solo devuelve los encabezados, no el cuerpo.</p>
-                <p>POST: enviar datos a un servidor para crear un recurso.</p>
-                <p>PUT: Reemplaza un recurso existente o lo crea si no existe.</p>
-                <p>PATCH: Modifica parcialmente un recurso.</p>
-                <p>DELETE: elimina un recurso.</p>
-                <footer> 
-                    <h5>freeCodeCamp. (2019, September 11). An introduction to HTTP: everything you need to know. FreeCodeCamp.org. https://www.freecodecamp.org/news/http-and-everything-you-need-to-know-about-it/</h5>
-                </footer> 
-            </article>
+                            <li class="lab li">
+                                <div class="questions">
+                                    <span class="arrow"></span>
+                                    <Span>¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT, PATCH, DELETE?</span>
+                                </div>
+                                <div class="answer">
+                                    <p class="lab p">GET: Obtener datos del servidor. Solicitar datos de un recurso específico 
+                                    en el que no se modifican de ninguna manera. Las solicitudes GET no cambian el estado del recurso.</p>
+                                    <p class="lab p">HEAD: comprobar si el recurso está presente antes de realizar una solicitud 
+                                    GET. Similar a GET, pero solo devuelve los encabezados, no el cuerpo.</p>
+                                    <p class="lab p">POST: enviar datos a un servidor para crear un recurso.</p>
+                                    <p class="lab p">PUT: Reemplaza un recurso existente o lo crea si no existe.</p>
+                                    <p class="lab p">PATCH: Modifica parcialmente un recurso.</p>
+                                    <p class="lab p">DELETE: elimina un recurso.</p>
+                                    <footer class="ref"> 
+                                        <h5>freeCodeCamp. (2019, September 11). An introduction to HTTP: everything you need 
+                                        to know. FreeCodeCamp.org.</h5>
+                                        <a href="https://www.freecodecamp.org/news/http-and-everything-you-need-to-know-about-it/" target="_blank">
+                                                https://www.freecodecamp.org/news/http-and-everything-you-need-to-know-about-it/
+                                        </a>
+                                    </footer> 
+                                </div>
+                            </li>
 
-            <article>
-                <header> 
-                    <h4>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</h4>
-                </header>
-                <p>POST es el método más adecuado porque envía datos de manera segura en el cuerpo de la solicitud y no en la URL, protegiendo información como la contraseña.</p>
-                <footer> 
-                    <h5>Requena, V. (2022, June 30). ¿Que metodo de petición HTTP debería usar? Stack Overflow En Español. https://es.stackoverflow.com/questions/543851/que-metodo-de-petici%C3%B3n-http-deber%C3%ADa-usar#:~:text=La%20respuesta%20correcta%20es%20POST!</h5>
-                </footer> 
-            </article>
+                            <li class="lab li">
+                                <div class="questions">
+                                    <span class="arrow"></span>
+                                    <Span>¿Qué método HTTP se debe utilizar al enviar un formulario HTML, por ejemplo cuando 
+                                    ingresas tu usuario y contraseña en algún sitio? ¿Por qué?</span>
+                                </div>
+                                <div class="answer">
+                                    <p class="lab p">POST es el método más adecuado porque envía datos de manera segura en el cuerpo de la 
+                                    solicitud y no en la URL, protegiendo información como la contraseña.</p>
+                                    <footer class="ref"> 
+                                        <h5>Requena, V. (2022, June 30). ¿Que metodo de petición HTTP debería usar? Stack 
+                                        Overflow En Español. </h5>
+                                            <a href="https://es.stackoverflow.com/questions/543851/que-metodo-de-petici%C3%B3n-http-deber%C3%ADa-usar#:~:text=La%20respuesta%20correcta%20es%20POST!" target="_blank">
+                                                https://es.stackoverflow.com/questions/543851/que-metodo-de-petici%C3%B3n-http-deber%C3%ADa-usar#:~:text=La%20respuesta%20correcta%20es%20POST!
+                                            </a>
+                                    </footer> 
+                                </div>
+                            </li>
 
-            <article>
-                <header> 
-                    <h4>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página a través de un URL?</h4>
-                </header>
-                <p>GET es el método que los navegadores usan al solicitar una página web.</p>
-                <footer> 
-                    <h5>W3Schools.com. (2025). W3schools.com. https://www.w3schools.com/Tags/ref_httpmethods.asp</h5>
-                </footer> 
-            </article>
+                            <li class="lab li">
+                                <div class="questions">
+                                    <span class="arrow"></span>
+                                    <Span>¿Qué método HTTP se utiliza cuando a través de un navegador web se accede a una página 
+                                    a través de un URL?</span>
+                                </div>
+                                <div class="answer">
+                                    <p class="lab p">GET es el método que los navegadores usan al solicitar una página web.</p>
+                                    <footer class="ref"> 
+                                        <h5>W3Schools.com. (2025). W3schools.com. </h5>
+                                            <a href="https://www.w3schools.com/Tags/ref_httpmethods.asp" target="_blank">
+                                                https://www.w3schools.com/Tags/ref_httpmethods.asp
+                                            </a>
+                                    </footer> 
+                                </div>
+                            </li>
 
-            <article>
-                <header> 
-                    <h4>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? ¿Ocurrió algún error?</h4>
-                </header>
-                <p>No ocurrió ningún error. Indica que la solicitud fue exitosa y el servidor devolvió el recurso solicitado.</p>
-                <footer> 
-                    <h5>HTTP response status codes - HTTP | MDN. (2024, October 18). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses</h5>
-                </footer> 
-            </article>
+                            <li class="lab li">
+                                <div class="questions">
+                                    <span class="arrow"></span>
+                                    <Span>Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué significa esto? 
+                                    ¿Ocurrió algún error?</span>
+                                </div>
+                                <div class="answer">
+                                    <p class="lab p">No ocurrió ningún error. Indica que la solicitud fue exitosa y el servidor 
+                                    devolvió el recurso solicitado.</p>
+                                    <footer class="ref"> 
+                                        <h5>HTTP response status codes - HTTP | MDN. (2024, October 18). MDN Web Docs. </h5>
+                                            <a href="https://www.w3schools.com/Tags/ref_httpmethods.asphttps://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses" target="_blank">
+                                                https://www.w3schools.com/Tags/ref_httpmethods.asphttps://developer.mozilla.org/en-US/docs/Web/HTTP/Status#successful_responses
+                                            </a>
+                                    </footer> 
+                                </div>
+                            </li>
 
-            <article>
-                <header> 
-                    <h4>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</h4>
-                </header>
-                <p>No necesariamente. Un error 404 significa que el usuario intentó acceder a un recurso que no existe en el servidor, Indica que el servidor no puede encontrar el recurso solicitado. Puede ser por un error en la URL o a que la página fue eliminada.</p>
-                <footer> 
-                    <h5>404 Not Found - HTTP | MDN. (2024, October 26). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404</h5>
-                </footer> 
-            </article>
+                            <li class="lab li">
+                                <div class="questions">
+                                    <span class="arrow"></span>
+                                    <Span>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que 
+                                    intentó acceder al sitio y se encontró con un error 404? ¿Por qué?</span>
+                                </div>
+                                <div class="answer">
+                                    <p class="lab p">No necesariamente. Un error 404 significa que el usuario intentó acceder a 
+                                    un recurso que no existe en el servidor, Indica que el servidor no puede encontrar el recurso 
+                                    solicitado. Puede ser por un error en la URL o a que la página fue eliminada.</p>
+                                    <footer class="ref"> 
+                                        <h5>404 Not Found - HTTP | MDN. (2024, October 26). MDN Web Docs.</h5>
+                                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404" target="_blank">
+                                                https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+                                            </a>
+                                    </footer> 
+                                </div>
+                            </li>
 
-            <article>
-                <header> 
-                    <h4>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</h4>
-                </header>
-                <p>Sí, porque un error 500 indica un problema en el servidor, como errores en el código o fallas de configuración.</p>
-                <footer> 
-                    <h5>500 Internal Server Error - HTTP | MDN. (2024, August 30). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500</h5>
-                </footer> 
-            </article>
+                            <li class="lab li">
+                                <div class="questions">
+                                    <span class="arrow"></span>
+                                    <Span>¿Es responsabilidad del desarrollador corregir un sitio web si un usuario reporta que 
+                                    intentó acceder al sitio y se encontró con un error 500? ¿Por qué?</span>
+                                </div>
+                                <div class="answer">
+                                    <p class="lab p">Sí, porque un error 500 indica un problema en el servidor, como errores en 
+                                    el código o fallas de configuración.</p>
+                                    <footer class="ref"> 
+                                        <h5>500 Internal Server Error - HTTP | MDN. (2024, August 30). MDN Web Docs.</h5>
+                                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500" target="_blank">
+                                                https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+                                            </a>
+                                    </footer> 
+                                </div>
+                            </li>
 
-            <article>
-                <header> 
-                    <h4>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</h4>
-                </header>
-                <p>Significa que ya no es recomendado y podría eliminarse en futuras versiones.</p>
-                <p> font -> Reemplazado por CSS </p>
-                <p> center -> Reemplazado por CSS </p>
-                <p> frame y frameset -> Reemplazados por iframe </p>
-                <footer> 
-                    <h5>Maqbool, T. (2024, August 31). Deprecated Tags in HTML — no longer recommended - Tajammal Maqbool - Medium. Medium. https://medium.com/@tajammalmaqbool11/deprecated-tags-in-html-no-longer-recommended-5fd86385daa0</h5>
-                </footer> 
-            </article>
+                            <li class="lab li">
+                                <div class="questions">
+                                    <span class="arrow"></span>
+                                    <Span>¿Qué significa que un atributo HTML5 esté depreciado o desaprobado (deprecated)? 
+                                    Menciona algunos elementos de HTML 4 que en HTML5 estén desaprobados.</span>
+                                </div>
+                                <div class="answer">
+                                    <p class="lab p">Significa que ya no es recomendado y podría eliminarse en futuras versiones.</p>
+                                    <p class="lab p"> font -> Reemplazado por CSS </p>
+                                    <p class="lab p"> center -> Reemplazado por CSS </p>
+                                    <p class="lab p"> frame y frameset -> Reemplazados por iframe </p>
+                                    <footer class="ref"> 
+                                        <h5>Maqbool, T. (2024, August 31). Deprecated Tags in HTML — no longer 
+                                        recommended - Tajammal Maqbool - Medium. Medium.</h5>
+                                            <a href="https://medium.com/@tajammalmaqbool11/deprecated-tags-in-html-no-longer-recommended-5fd86385daa0" target="_blank">
+                                                https://medium.com/@tajammalmaqbool11/deprecated-tags-in-html-no-longer-recommended-5fd86385daa0
+                                            </a>
+                                    </footer> 
+                                </div>
+                            </li>
 
-            <article>
-                <header> 
-                    <h4>¿Cuáles son las diferencias principales entre HTML4 y HTML5?</h4>
-                </header>
-                <p>HTML5 permite elementos semánticos como article, section.</p>
-                <p>HTML5 elimina etiquetas obsoletas como font, center.</p>
-                <p>HTML5 soporta APIs nativas como Canvas, WebSockets, y Geolocalización.</p>
-                <p>HTML5 es mucho más dinámico e incluye elementos multimedia. Soporta de forma nativa el vídeo y el audio, e incluso puedes crear juegos o animaciones con él.</p>
-                <footer> 
-                    <h5>Maqbool, T. (2024, August 31). Deprecated Tags in HTML — no longer recommended - Tajammal Maqbool - Medium. Medium. https://medium.com/@tajammalmaqbool11/deprecated-tags-in-html-no-longer-recommended-5fd86385daa0</h5>
-                </footer> 
-            </article>
+                            <li class="lab li">
+                                <div class="questions">
+                                    <span class="arrow"></span>
+                                    <Span>¿Cuáles son las diferencias principales entre HTML4 y HTML5?</span>
+                                </div>
+                                <div class="answer">
+                                    <p class="lab p">HTML5 permite elementos semánticos como article, section.</p>
+                                    <p class="lab p">HTML5 elimina etiquetas obsoletas como font, center.</p>
+                                    <p class="lab p">HTML5 soporta APIs nativas como Canvas, WebSockets, y Geolocalización.</p>
+                                    <p class="lab p">HTML5 es mucho más dinámico e incluye elementos multimedia. 
+                                    Soporta de forma nativa el vídeo y el audio, e incluso puedes crear juegos o 
+                                    animaciones con él.</p>
+                                    <footer class="ref"> 
+                                        <h5>Maqbool, T. (2024, August 31). Deprecated Tags in HTML — no longer 
+                                        recommended - Tajammal Maqbool - Medium. Medium</h5>
+                                            <a href="https://medium.com/@tajammalmaqbool11/deprecated-tags-in-html-no-longer-recommended-5fd86385daa0" target="_blank">
+                                                https://medium.com/@tajammalmaqbool11/deprecated-tags-in-html-no-longer-recommended-5fd86385daa0
+                                            </a>
+                                    </footer> 
+                                </div>
+                            </li>
 
-            <article>
-                <header> 
-                    <h4>¿Qué componentes de estructura y estilo tiene una tabla?</h4>
-                </header>
-                <p>table: Son datos con más de una dimensión.</p>
-                <p>caption: Da un título a tu tabla.</p>
-                <p>col: Columna de una tabla.</p>
-                <p>colgroup: Grupo de columnas.</p>
-                <p>thead: Delimita el encabezado de la tabla.</p>
-                <p>tfoot: Delimita la parte de la tabla correspondiente al pie de página.</p>
-                <p>tbody: Delimita las otras partes del contenido de la tabla que no están en el encabezado o en el pie de página.</p>
-                <p>td: Celda con datos de una tabla.</p>
-                <p>tr: Fila de celdas en una tabla.</p>
-                <p>th: Celda de encabezado de una tabla.</p>
-                <footer> 
-                    <h5>The Table element - HTML: HyperText Markup Language | MDN. (2024, December 19). MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table</h5>
-                </footer> 
-            </article>
+                            <li class="lab li">
+                                <div class="questions">
+                                    <span class="arrow"></span>
+                                    <Span>¿Qué componentes de estructura y estilo tiene una tabla?</span>
+                                </div>
+                                <div class="answer">
+                                    <p class="lab p">table: Son datos con más de una dimensión.</p>
+                                    <p class="lab p">caption: Da un título a tu tabla.</p>
+                                    <p class="lab p">col: Columna de una tabla.</p>
+                                    <p class="lab p">colgroup: Grupo de columnas.</p>
+                                    <p class="lab p">thead: Delimita el encabezado de la tabla.</p>
+                                    <p class="lab p">tfoot: Delimita la parte de la tabla correspondiente al pie de página.</p>
+                                    <p class="lab p">tbody: Delimita las otras partes del contenido de la tabla que no están en el encabezado o en el pie de página.</p>
+                                    <p class="lab p">td: Celda con datos de una tabla.</p>
+                                    <p class="lab p">tr: Fila de celdas en una tabla.</p>
+                                    <p class="lab p">th: Celda de encabezado de una tabla.</p>
+                                    <footer class="ref"> 
+                                        <h5>The Table element - HTML: HyperText Markup Language | MDN. (2024, December 19). 
+                                        MDN Web Docs.</h5>
+                                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table" target="_blank">
+                                                https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
+                                            </a>
+                                    </footer> 
+                                </div>
+                            </li>
 
-            <article>
-                <header> 
-                    <h4>¿Cuáles son los principales controles de una forma HTML5?</h4>
-                </header>
-                <p>Campos de entrada: ingresar texto en una sola línea.</p>
-                <p>Casillas de verificación: seleccionar múltiples opciones.</p>
-                <p>Botones de opción: seleccionar solo una opción dentro de un grupo.</p>
-                <p>Cuadros de selección: Menús desplegables con múltiples opciones.</p>
-                <p>Áreas de texto: Permiten ingresar texto en varias líneas.</p>
-                <p>Botones: Se utilizan para enviar, reiniciar o realizar acciones dentro del formulario.</p>
-                <footer> 
-                    <h5>Almabetter. (2023). AlmaBetter. https://www.almabetter.com/bytes/tutorials/html/form-controls-in-html</h5>
-                </footer> 
-            </article>
+                            <li class="lab li">
+                                <div class="questions">
+                                    <span class="arrow"></span>
+                                    <Span>¿Cuáles son los principales controles de una forma HTML5?</span>
+                                </div>
+                                <div class="answer">
+                                    <p class="lab p">Campos de entrada: ingresar texto en una sola línea.</p>
+                                    <p class="lab p">Casillas de verificación: seleccionar múltiples opciones.</p>
+                                    <p class="lab p">Botones de opción: seleccionar solo una opción dentro de un grupo.</p>
+                                    <p class="lab p">Cuadros de selección: Menús desplegables con múltiples opciones.</p>
+                                    <p class="lab p">Áreas de texto: Permiten ingresar texto en varias líneas.</p>
+                                    <p class="lab p">Botones: Se utilizan para enviar, reiniciar o realizar acciones 
+                                    dentro del formulario.</p>
+                                    <footer class="ref"> 
+                                        <h5>Almabetter. (2023). AlmaBetter.</h5>
+                                            <a href="https://www.almabetter.com/bytes/tutorials/html/form-controls-in-html" target="_blank">
+                                                https://www.almabetter.com/bytes/tutorials/html/form-controls-in-html
+                                            </a>
+                                    </footer> 
+                                </div>
+                            </li>
 
-            <article>
-                <header> 
-                    <h4>Sobre el ciclo de vida y desarrollo de los sistemas de información:</h4>
-                    <h4>¿Cuál es el ciclo de vida de los sistemas de información?</h4>
-                </header>
-                <p>Planeación: Se definen los objetivos del proyecto y se asignan los recursos necesarios.</p>
-                <p>Análisis: Se recopilan los requisitos y se estudian las necesidades del sistema.</p>
-                <p>Diseño: Se crean los planes y las especificaciones detalladas para el sistema.</p>
-                <p>Implementación: Se desarrolla y programa el sistema según el diseño aprobado.</p>                <p>Mantenimiento: Se realizan ajustes, correcciones y mejoras al sistema en uso.</p>
-                <header>
-                    <h4>¿Cuál es el ciclo de desarrollo de sistemas de información?</h4>
-                </header>
-                <p>Requisitos: Se recopilan las necesidades y expectativas de los usuarios para el sistema.</p>
-                <p>Diseño: Se planifica la estructura y la arquitectura del sistema.</p>
-                <p>Implementación: Se desarrolla el sistema basándose en el diseño.</p>
-                <p>Pruebas: Se verifica que el sistema funcione correctamente y cumpla con los requisitos.</p>
-                <p>Despliegue: El sistema se pone en funcionamiento y se entrega a los usuarios finales.</p>
-                <p>Mantenimiento: Se realizan actualizaciones y correcciones para asegurar el buen funcionamiento a largo plazo.</p>
-                <footer> 
-                    <h5>Ciclo de vida del software: todo lo que necesitas saber. (2024, June 3). Intelequia. https://intelequia.com/es/blog/post/ciclo-de-vida-del-software-todo-lo-que-necesitas-saber</h5>
-                </footer> 
-            </article>
+                            <li class="lab li">
+                                <div class="questions">
+                                    <span class="arrow"></span>
+                                    <Span>Sobre el ciclo de vida y desarrollo de los sistemas de información: ¿Cuál es el ciclo de vida de los sistemas de información? ¿Cuál es el ciclo de desarrollo de sistemas de información?</span>
+                                </div>
+                                <div class="answer">
+                                    <p class="lab p">Planeación: Se definen los objetivos del proyecto y se asignan los recursos necesarios.</p>
+                                    <p class="lab p">Análisis: Se recopilan los requisitos y se estudian las necesidades del sistema.</p>
+                                    <p class="lab p">Diseño: Se crean los planes y las especificaciones detalladas para el sistema.</p>
+                                    <p class="lab p">Implementación: Se desarrolla y programa el sistema según el diseño aprobado.</p>
+                                    <p class="lab p">Mantenimiento: Se realizan ajustes, correcciones y mejoras al sistema en uso.</p>
+                                    <p class="lab p"> ----------------------------> </p>
+                                    <p class="lab p">Requisitos: Se recopilan las necesidades y expectativas de los usuarios para el sistema.</p>
+                                    <p class="lab p">Diseño: Se planifica la estructura y la arquitectura del sistema.</p>
+                                    <p class="lab p">Implementación: Se desarrolla el sistema basándose en el diseño.</p>
+                                    <p class="lab p">Pruebas: Se verifica que el sistema funcione correctamente y cumpla con los requisitos.</p>
+                                    <p class="lab p">Despliegue: El sistema se pone en funcionamiento y se entrega a los usuarios finales.</p>
+                                    <p class="lab p">Mantenimiento: Se realizan actualizaciones y correcciones para asegurar el buen funcionamiento a largo plazo.</p>
+                                    <footer class="ref"> 
+                                        <h5>Ciclo de vida del software: todo lo que necesitas saber. (2024, June 3). Intelequia.</h5>
+                                            <a href="https://intelequia.com/es/blog/post/ciclo-de-vida-del-software-todo-lo-que-necesitas-saber" target="_blank">
+                                                https://intelequia.com/es/blog/post/ciclo-de-vida-del-software-todo-lo-que-necesitas-saber
+                                            </a>
+                                    </footer> 
+                                </div>
+                            </li>
+                        </ul>
+                    </td>
+
+                    <td class="lab-column">
+                        <h1 class="title">Lab 3</h1>
+                            <ul>
+                                <li class="lab li">
+                                    <div class="questions">
+                                        <span class="arrow"></span>
+                                        <Span>Como ingeniero de software ¿cuál es tu recomendación sobre el uso de !important en un CSS?</span>
+                                    </div>
+                                    <div class="answer">
+                                        <p class="lab p">!important  debe ser usado de manera justificada, es importante que se tenga en cuenta 
+                                        que es solo para situaciones muy específicas, debido a que si se usa de manera muy frecuente dificultará 
+                                        el funcionamiento del código.</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li class="lab li">
+                                    <div class="questions">
+                                        <span class="arrow"></span>
+                                        <Span>Si se pone una imagen de fondo en una página HTML, ¿por qué debe escogerse con cuidado?</span>
+                                    </div>
+                                    <div class="answer">
+                                        <p class="lab p"> Al momento de escoger una imagen de fondo es importante tomar en cuenta varios factores, 
+                                        como por ejemplo: </p>
+                                        <p class="lab p"> - La calidad de la imagen, tomando en cuenta que si es de baja resolución, se verá 
+                                        pixeleada, lo que le quitará calidad a la página.</p>
+                                        <p class="lab p"> - Los colores y diseño también son importantes, más tomando en cuenta que se usará 
+                                        como fondo, por lo que hay que tener en cuenta cómo se verá el texto, ya que este debe ser legible.</p>
+                                        <p class="lab p"> - Las dimensiones son relevantes para evitar que la imagen se distorcione, lo 
+                                        que podría causar que no se entienda y pierda calida.</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li class="lab li">
+                                    <div class="questions">
+                                        <span class="arrow"></span>
+                                        <Span>Como ingeniero de software, ¿cuál es tu recomendación al elegir las unidades de un propiedad de 
+                                        estilo entre %, px y pt?</span>
+                                    </div>
+                                    <div class="answer">
+                                        <p class="lab p">Todo depende de a qué estemos cambiandole el formato. Para tipografía, usa rem o em. 
+                                        Para layouts, es mejor usar % y vh/vw. Para bordes y sombras, px es suficiente.</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <ul>
+                                <li class="lab li">
+                                    <div class="questions">
+                                        <span class="arrow"></span>
+                                        <Span>¿Por qué el uso de una versión minimizada del CSS mejora el rendimiento del sitio?</span>
+                                    </div>
+                                    <div class="answer">
+                                        <p class="lab p">Un CSS minimizado reduce el tamaño del archivo, lo que mejora la carga de la página, 
+                                        haciendo que sea más rápida y obtenga mayor eficiencia.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </td>
+                    </td>
+                </tr>
+            </table>
         </section>
+        <footer> 
+            <h4 class="foot"> Hecho con Visual Studio Code https://code.visualstudio.com/</h4>
+        </footer> 
+        <script src="js/main.js"></script>
     </body>
-
-    <footer> 
-        <h4> Hecho con Visual Studio Code https://code.visualstudio.com/</h4>
-    </footer> 
-
 </html>
