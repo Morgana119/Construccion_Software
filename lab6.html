@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"> <!--acentos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 6</title> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleLab6.css">
+    </head>
+    <body>
+        <div class="centerBox">
+            <form class="box">
+                <div class="field">
+                    <div class="label-wrapper">
+                        <label class="label">Password</label>
+                        <div class="tooltip-container">
+                            <img class="info" src="icons/info_icon.png" id="infoIcon">
+                            <div class="tooltip" id="tooltip">La contraseña debe tener al menos 8 caracteres, 
+                            una mayúscula, una minúscula, un número y un símbolo.</div>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <input class="input" type="password" placeholder="********" id="passwordValidation"/>
+                    </div>
+                    <p class="help is-danger" id="messagePassword"></p>
+                </div>
+                <div class="field">
+                    <label class="label">Verify Password</label>
+                    <div class="control">
+                        <input class="input is-succes" type="password" placeholder="********" id="confirmPassword"/>
+                    </div>
+                    <p class="help" id="messageValidation"></p>
+                </div>
+                <button class="button is-primary">Confirm</button>
+            </form>
+        </div>
+        <section class="hero is-small is-link">
+            <div class="hero-body">
+                <p class="title">Lab 6</p>
+                <p class="subtitle">Preguntas</p>
+            </div>
+        </section>  
+        <div class="content">
+            <h3>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los 
+            inputs de las formas antes de enviar los datos al servidor?</h3>
+            <ul>
+                <li><strong>Mejora la experiencia del usuario (UX): </strong>La validación en el cliente proporciona 
+                retroalimentación instantánea sin necesidad de esperar una respuesta del servidor.</li>
+                <li><strong>Reduce la carga en el servidor: </strong>Al evitar solicitudes innecesarias con datos 
+                incorrectos, se optimiza el uso de recursos del backend.</li>
+            </ul> 
+            <p>
+                Client-side form validation - Learn web development | MDN. (2024, December 31). MDN Web Docs. 
+                <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation" target="_blank">
+                    https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation
+                </a>
+            </p>
+            
+            <h3>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</h3>
+            <p>
+                Las validaciones en JavaScript se ejecutan en el cliente, lo que significa que un usuario
+                puede modificar o desactivar el código JavaScript antes de enviar los datos. Por ejemplo:
+            </p>
+            <ul>
+                <li>Deshabilitar JavaScript en el navegador (usando herramientas de desarrollo como DevTools).</li>
+                <li>Manipular el DOM y modificar los valores directamente con document.getElementById("campo").value = "dato inválido";.</li>
+                <li>Interceptar y modificar la petición con herramientas como Burp Suite o la consola del navegador.</li>
+                <li>Enviar solicitudes maliciosas directamente al servidor usando herramientas como Postman o cURL.</li>
+            </ul> 
+            <p>
+                WSTG - v4.1 | OWASP Foundation. (2025). Owasp.org. 
+                <a href="https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.8-Testing_for_Client_Side" target="_blank">
+                    https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.8-Testing_for_Client_Side
+                </a>
+            </p>
+
+            <h3>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</h3>
+            <p>
+                A pesar de que JavaScript no debe ser la única capa de seguridad, sigue siendo una buena 
+                práctica porque es eficiente para una validación rápida y mejora la experiencia del usuario. 
+                Además evita errores accidentales por parte del usuario antes de enviar el formulario. No 
+                reemplaza la validación en el backend, pero sí actúa como un primer filtro.Por lo que, 
+                la seguridad real debe implementarse en el servidor, donde las reglas de validación no 
+                pueden ser modificadas por el usuario.
+            </p>
+            <p>
+                Client-side form validation - Learn web development | MDN. (2024, December 31). MDN Web Docs. 
+                <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation" target="_blank">
+                    https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Form_validation
+                </a>
+            </p>
+        </div>
+        <div class="btn_container">
+            <button class="button is-info" id="changeText">Lab 6</button>
+        </div>
+        
+        <div class="content">
+            <h3>Fuentes de apoyo</h3>
+            <ul>
+                <li>
+                    <a href="https://stackoverflow.com/questions/26322867/how-to-validate-password-using-following-conditions" target="_blank">
+                    https://stackoverflow.com/questions/26322867/how-to-validate-password-using-following-conditions
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/jsref/event_onmouseover.asp" target="_blank">
+                    https://www.w3schools.com/jsref/event_onmouseover.asp
+                    </a>
+                </li>
+                <li>
+                    <a href="https://bulma.io/documentation/elements/content/" target="_blank">
+                    https://bulma.io/documentation/elements/content/
+                    </a>
+                </li>
+                <li>
+                    <a href="https://cssreference.io/property/justify-content/" target="_blank">
+                    https://cssreference.io/property/justify-content/
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script src="js/scriptLab6.js"></script>
+    </body>
+</html>

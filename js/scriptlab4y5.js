@@ -5,7 +5,7 @@ class Tarea {
     }
   
     marcarComoCompletada() {
-      this.completada = !this.completada; // Cambia el estado
+      this.completada = !this.completada;
     }
   }
   
